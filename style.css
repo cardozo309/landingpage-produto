@@ -1,0 +1,102 @@
+body{
+    background-color: white;
+}
+
+#backgroundCard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    width: 1000px;
+    height: 600px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 20px #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+#backgroundCard img{
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.internaCard{
+    position: absolute;
+    display: inline-block;
+}
+
+.paragrafo1{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 15px;
+    margin: 25px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1{
+    display: block;
+    max-width: 200px;
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: 27px;
+    margin-top: -20px;
+}
+
+p{
+    margin-left: 20px;
+    max-width: 220px;
+}
+
+.preco{
+    display: inline-block;
+}
+
+.ofer1{
+    color: green;
+    font-size: 30px;
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ofer2{
+    text-decoration: line-through;
+}
+
+.botao{
+    cursor: pointer;
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.botao:hover{
+    background-color: rgb(1, 78, 1);
+    color: rgb(253, 253, 127);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
