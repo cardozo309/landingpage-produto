@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
 body{
-    background-color: white;
+    background-color: rgb(247, 238, 227);
 }
 
 #backgroundCard{
@@ -7,11 +9,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: antiquewhite;
-    width: 1000px;
-    height: 600px;
-    border-radius: 7px;
-    box-shadow: 1px 1px 20px #888888;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +19,15 @@ body{
     height: 350px;
     background-color: white;
     border-radius: 7px;
+}
+
+.img{
+    display: inline-block;
+    background-image: url("images/desktop.jpg");
+    width: 250px;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #backgroundCard img{
@@ -44,6 +50,7 @@ body{
     margin: 25px;
     margin-top: 10px;
     padding-bottom: 10px;
+    font-family: Montserrat, sans-serif;
 }
 
 h1{
@@ -69,7 +76,7 @@ p{
     font-size: 30px;
     margin-top: -10px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
 }
 
 .ofer2{
@@ -97,6 +104,48 @@ p{
     color: rgb(253, 253, 127);
 }
 
+@media screen and (max-width: 700px) {
+   
+    #backgroundCard {
+       height: 667px;
+       width: 375px; 
+    }
+    
+    #card{
+        width: 85%;
+        height: 90%;
+        border-radius: 7px;
+    }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    #card .img{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .img{
+        background-image: url("images/mobiile.jpg");
+        width: 100%;
+        height: 40%;
+        display: inline-block;
+    }
+
+    .internaCard {
+        display: block;
+    }
+
+    h1{
+        font-size: 32px;
+        max-width: 250px;
+    }
+
+    .descripion{
+         max-width: 250px;
+         font-size: 15px;
+    }
+
+    .container{
+        margin-left: 40px;
+    }
+    
+    
+
+}
